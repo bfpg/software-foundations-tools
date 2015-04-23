@@ -80,6 +80,9 @@ Coq installer.
 - From the [Proof General][PG] site, download to the host:
     - the [source][pg-source]
 
+[PG]: http://proofgeneral.inf.ed.ac.uk/
+[pg-source]: http://proofgeneral.inf.ed.ac.uk/releases/ProofGeneral-4.2.tgz
+
 - Unpack the TGZ file.
 
 - Delete all `*.elc` files from the `ProofGeneral-4.2` heirarchy.
