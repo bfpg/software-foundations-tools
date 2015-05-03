@@ -105,7 +105,7 @@ Coq installer.
   populated with the components collected in the previous steps,
   and the `emacs.bat` and `make.bat` files from this repository.
 
-    - `bfpg-sf`
+    - `sf`
         - `software-foundations/`
             - `.git`, etc.
             - `sf/`
@@ -121,7 +121,7 @@ Coq installer.
 
 - Package as a ZIP file:
 
-        zip -r bfpg-sf-windows-2015-05-03.zip bfpg-sf/
+        zip -r sf-windows-2015-05-03.zip sf/
 
 ## Test the bundle
 
