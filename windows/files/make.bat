@@ -8,7 +8,7 @@ set BFPG_SF_PTH=%PATH%
 path %BFPG_SF_COQ%;%PATH%
 pushd %BFPG_SF_SRC%
 
-make
+make %*
 
 path %BFPG_SF_PTH%
 popd
