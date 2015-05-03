@@ -70,12 +70,12 @@ Coq installer.
     - its [signature][emacs-sig]
 
 [Emacs]: https://ftp.gnu.org/gnu/emacs/windows/
-[emacs-zip]: https://ftp.gnu.org/gnu/emacs/windows/emacs-24.4-bin-i686-pc-mingw32.zip
-[emacs-sig]: https://ftp.gnu.org/gnu/emacs/windows/emacs-24.4-bin-i686-pc-mingw32.zip.sig
+[emacs-zip]: https://ftp.gnu.org/gnu/emacs/windows/emacs-24.5-bin-i686-mingw32.zip
+[emacs-sig]: https://ftp.gnu.org/gnu/emacs/windows/emacs-24.5-bin-i686-mingw32.zip.sig
 
 - Verify:
 
-        gpg --keyserver-options auto-key-retrieve --verify emacs-24.4-bin-i686-pc-mingw32.zip.sig
+        gpg --keyserver-options auto-key-retrieve --verify emacs-24.5-bin-i686-mingw32.zip.sig
 
 - From the [Proof General][PG] site, download to the host:
     - the [source][pg-source]
@@ -114,14 +114,14 @@ Coq installer.
                 - `bin`, `config`, etc.
             - `ProofGeneral-4.2`
                 - `AUTHORS`, `INSTALL`, etc.
-            - `emacs-24.4-bin-i686-pc-mingw32`
+            - `emacs-24.5-bin-i686-mingw32`
                 - `bin`, `libexec`, etc.
         - `emacs.bat`
         - `make.bat`
 
 - Package as a ZIP file:
 
-        zip -r bfpg-sf-windows-2015-04-23.zip bfpg-sf/
+        zip -r bfpg-sf-windows-2015-05-03.zip bfpg-sf/
 
 ## Test the bundle
 
