@@ -1,0 +1,15 @@
+#!/bin/bash
+
+pushd $(dirname $0) > /dev/null
+BFPG_SF_TOP=$(pwd)
+popd > /dev/null
+
+BFPG_SF_SRC="${BFPG_SF_TOP}/software-foundations/sf"
+BFPG_SF_COQ="${BFPG_SF_TOP}/tools/Coq-8.4pl5/CoqIDE_8.4pl5.app/Contents/Resources/bin"
+BFPG_SF_PRF="${BFPG_SF_TOP}/tools/ProofGeneral-4.2/generic/proof-site.el"
+BFPG_SF_EMC="${BFPG_SF_TOP}/tools/Emacs-24.5-1/Emacs.app/Contents/MacOS/Emacs"
+
+PATH="${BFPG_SF_COQ}:${PATH}"
+
+"${BFPG_SF_EMC}" --load "${BFPG_SF_PRF}" "$@" "${BFPG_SF_SRC}/Basics.v" &
+

@@ -1,0 +1,14 @@
+#!/bin/bash
+
+pushd $(dirname $0) > /dev/null
+BFPG_SF_TOP=$(pwd)
+popd > /dev/null
+
+BFPG_SF_SRC="${BFPG_SF_TOP}/software-foundations/sf"
+BFPG_SF_COQ="${BFPG_SF_TOP}/tools/Coq-8.4pl5/CoqIDE_8.4pl5.app/Contents/Resources/bin"
+
+PATH="${BFPG_SF_COQ}:${PATH}"
+cd "${BFPG_SF_SRC}"
+
+make "$@"
+
